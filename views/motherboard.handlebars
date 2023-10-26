@@ -1,0 +1,16 @@
+<div class="carousel motherbd">
+    <p class="lg-flex">MOTHERBOARDS</p>
+</div>
+<div class="flex-row">
+    {{#each motherbd}}
+        <div class="flex-product">
+        <div class="img">
+            <img src="{{this.images.[0]}}" alt="{{this.name}}" height="250" width="250">
+        </div>
+        <div class="info">
+            <p class="logo">{{this.brand}}</p>
+            <a href="/motherboard/{{this.slug}}" class="buy-item">Buy</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

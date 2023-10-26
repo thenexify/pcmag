@@ -1,0 +1,30 @@
+<div class="flex-info">
+    <div class="image-viewer">
+        <img src="{{proc.images.[0]}}" id="main-image" class="main-image" alt="{{proc.name}}">
+        <div class="images-list">
+            <img src="{{proc.images.[0]}}" alt="{{proc.name}}">
+            <img src="{{proc.images.[1]}}" alt="{{proc.name}}">
+            <img src="{{proc.images.[2]}}" alt="{{proc.name}}">
+        </div>
+    </div>
+
+    <div class="flex-item-processor-details">
+        <p class="lg-flex-z" item-title>{{proc.name}}</p>
+        <p>Cores: {{proc.cores}}</p>
+        <p>Threads: {{proc.threads}}</p>
+        <p>Base Clock: {{proc.baseClock}}</p>
+        <p>Boost Clock: {{proc.boostClock}}</p>
+        <p>TDP: {{proc.TDP}}</p>
+        <p>Architecture: {{proc.architecture}}</p>
+        <p>Socket: {{proc.socket}}</p>
+        <p>Process: {{proc.process}}</p>
+        <p>Cooler: {{proc.cooler}}</p>
+        <p class="lg-flex-z" data-price>Price: <span class="strkthru">{{proc.oldPrice}}</span>&nbsp;{{proc.currentPrice}}</p>
+        <form action="/">
+            <div class="buttons">
+                <a href="/processor/buy/{{proc.slug}}" class="buy-item">Buy Now</a>
+                <a href="#" class="buy-item" add-to-cart>Add to Cart</a>
+            </div>
+        </form>
+    </div>
+</div>

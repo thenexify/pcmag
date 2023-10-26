@@ -1,0 +1,58 @@
+{{!-- Main Fixed HTML --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCMag</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gabarito&family=Inter:wght@500&family=Kaushan+Script&family=Montserrat:wght@500;600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/" class="link">
+                <p>PCMag</p>
+            </a>
+        </div>
+        <div class="links">
+            <a href="/processor" class="link">Processor</a>
+            <a href="/motherboard" class="link">Motherboard</a>
+            <a href="/gfxcards" class="link">Graphics Card</a>
+            <a href="/ram" class="link">RAM</a>
+            <a href="/ssd" class="link">SSD</a>
+        </div>
+        <div class="btn-cart">
+            <a href="#" class="btn" id="cartToggle">Cart</a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="cart">
+        <div class="header">
+            <div class="lg-flex">Cart</div>
+            <div id="index"></div>
+        </div>
+        <div class="body" id="cartBody">
+        </div>
+        <div class="cart-footer">
+            <button class="btn wide" data-checkout>Checkout</button>
+        </div>
+    </div>
+    {{{body}}}
+    <nav class="footer">
+            <div class="logo">
+                <p class="">PCMag</p>
+            </div>
+            <p>Copyright 2023-2024</p>
+    </nav>
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/imageview.js"></script>
+    <script src="/static/js/cart.js"></script>
+    <script src="/static/js/navbar.js"></script>
+</body>
+</html>

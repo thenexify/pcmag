@@ -1,0 +1,16 @@
+<div class="carousel ssd">
+    <p class="lg-flex">SSDs</p>
+</div>
+<div class="flex-row">
+    {{#each ssd}}
+        <div class="flex-product">
+        <div class="img">
+            <img src="{{this.images.[0]}}" alt="{{this.name}}" height="250" width="250">
+        </div>
+        <div class="info">
+            <p class="logo">{{this.brand}}</p>
+            <a href="/ssd/{{this.slug}}" class="buy-item">Buy</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

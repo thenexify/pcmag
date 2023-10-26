@@ -1,0 +1,16 @@
+<div class="carousel processor">
+    <p class="lg-flex">PROCESSORS</p>
+</div>
+<div class="flex-row">
+    {{#each proc}}
+    <div class="flex-product">
+        <div class="img">
+            <img src="{{this.images.[0]}}" alt="{{this.name}}" height="250" width="250">
+        </div>
+        <div class="info">
+            <p class="logo">{{this.name}}</p>
+            <a href="/processor/{{this.slug}}" class="buy-item">Buy</a>
+        </div>
+    </div>
+{{/each}}
+</div>

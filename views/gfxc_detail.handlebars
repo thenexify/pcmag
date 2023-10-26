@@ -1,0 +1,25 @@
+<div class="flex-info">
+    <div class="image-viewer">
+        <img src="{{gfxc.images.[0]}}" id="main-image" class="main-image" alt="{{gfxc.name}}">
+        <div class="images-list">
+            <img src="{{gfxc.images.[0]}}" alt="{{gfxc.name}}">
+            <img src="{{gfxc.images.[1]}}" alt="{{gfxc.name}}">
+            <img src="{{gfxc.images.[2]}}" alt="{{gfxc.name}}">
+        </div>
+    </div>
+    <div class="flex-item-processor-details">
+        <p class="lg-flex-z" item-title>{{gfxc.name}}</p>
+        <p>Model:  {{gfxc.VRAM}}</p>
+        <p>Socket: {{gfxc.CUDA_Cores}}</p>
+        <p>Chipset: {{gfxc.boostClock}}</p>
+        <p>RAM: {{gfxc.memorySpeed}}</p>
+        <p>Storage: {{gfxc.TDP}}</p>
+        <p class="lg-flex-z" data-price>Price: <span class="strkthru">{{gfxc.oldPrice}}</span>&nbsp;{{gfxc.currentPrice}}</p>
+        <form action="/">
+            <div class="buttons">
+                <a href="/gfxcards/buy/{{gfxc.slug}}" class="buy-item">Buy Now</a>
+                <a href="#" class="buy-item" add-to-cart>Add to Cart</a>
+            </div>
+        </form>
+    </div>
+</div>

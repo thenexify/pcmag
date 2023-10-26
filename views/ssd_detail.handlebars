@@ -1,0 +1,25 @@
+<div class="flex-info">
+    <div class="image-viewer">
+        <img src="{{ssd.images.[0]}}" id="main-image" class="main-image" alt="{{ssd.name}}">
+        <div class="images-list">
+            <img src="{{ssd.images.[0]}}" alt="{{ssd.brand}} {{ssd.model}}">
+            <img src="{{ssd.images.[1]}}" alt="{{ssd.brand}} {{ssd.model}}">
+            <img src="{{ssd.images.[2]}}" alt="{{ssd.brand}} {{ssd.model}}">
+        </div>
+    </div>
+    <div class="flex-item-processor-details">
+        <p class="lg-flex-z" item-title>{{ssd.brand}}</p>
+        <p>Model:  {{ssd.model}}</p>
+        <p>Capacity: {{ssd.capacity}}</p>
+        <p>Type: {{ssd.type}}</p>
+        <p>Read Speed: {{ssd.readSpeed}}</p>
+        <p>Write Speed: {{ssd.writeSpeed}}</p>
+        <p class="lg-flex-z" data-price>Price: <span class="strkthru">{{ssd.oldPrice}}</span>&nbsp;{{ssd.currentPrice}}</p>
+        <form action="/">
+            <div class="buttons">
+                <a href="/ssd/buy/{{ssd.slug}}" class="buy-item">Buy Now</a>
+                <a href="#" class="buy-item" add-to-cart>Add to Cart</a>
+            </div>
+        </form>
+    </div>
+    </div>

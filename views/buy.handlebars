@@ -1,0 +1,27 @@
+<section class="container-buy">
+    <div class="items-info">
+        <img src="{{element.images.[0]}}" alt="" height="100" width="100">
+        <p class="lg-flex-z">{{element.name}}{{element.brand}} {{element.model}}</p>
+    </div>
+        <div class="user-info">
+        <label for="name">Name</label>
+        <input required type="text" id="name" placeholder="Name">
+        <label for="email">E-mail Address</label>
+        <input required type="email" placeholder="name@example.com" id="email">
+        <label for="phone">Phone Number</label>
+        <input required type="tel" name="" id="phone" placeholder="+911234567890">
+        <label for="address">Address</label>
+        <input required type="text" id="address" placeholder="Address">
+    </div>
+    <div class="payment">
+        <label for="cardno">Credit / Debit Card Number</label>
+            <input required type="text" size="16" max="16" min="0" id="cardno" data-card placeholder="4012 7588 5689 4993">
+            <label for="dateexp">Expiry Date</label>
+            <input required type="date" name="" data-expdate placeholder="03/25" id="dateexp">
+            <label for="cvv">CVV / CVC</label>
+            <input required type="number" placeholder="456" name="" size="3" maxlength="3" max="3" min="0" data-cvv id="cvv">
+    </div>
+    <div class="buy">
+        <a class="buy-item" href="/" type="submit">Place Order</a>
+    </div>
+</section>
